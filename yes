@@ -70,3 +70,87 @@ int main() {
   
   return 0;
 }
+
+
+//BILL CLINTONNNN
+#include <iostream>
+using namespace std;
+
+class myClass {
+  public:
+    int calcSpace();
+};
+
+int myClass::calcSpace() {
+
+  int tables, peoples;
+  
+  cin >> tables;
+  cin >> peoples;
+
+  if(peoples > tables) {
+    return 69;
+  }
+  else {
+    return 96;
+  }
+}
+
+int main() {
+
+  myClass obj;
+
+  int num = obj.calcSpace();
+
+  cout << num;
+}
+
+
+//CONSTRUCTORS WITH PARAMETERS:
+#include <iostream>
+using namespace std;
+
+class myClass {
+  public:
+
+    int num1;
+    string string1;
+    
+    myClass(int age, string name) {
+      num1 = age;
+      string1 = name;
+    }
+};
+
+
+int main() {
+
+  myClass obj(15, "BOB");
+  myClass obj1(56, "E");
+
+  cout << obj.num1 <<  " " << obj.string1 << endl;
+  cout << obj1.num1 <<  " " << obj1.string1 << endl;
+}
+
+//ENDED IN CONSTRUCTORS:
+#include <iostream>
+using namespace std;
+
+class myClass {
+  public:
+
+    string name;
+    int age;
+    myClass(string name1, int num1);
+};
+
+myClass::myClass(string name1, int num1) {
+  name = name1;
+  age = num1;
+}
+
+int main() {
+
+  myClass obj("Aaron", 19);
+  cout << obj.name << obj.age;
+}
